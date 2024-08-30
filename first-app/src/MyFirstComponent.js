@@ -1,3 +1,5 @@
+import "./FirstComponentStyle.css";
+
 export default function MyFirstComponent() {
   const person = {
     name: "yarob",
@@ -9,7 +11,7 @@ export default function MyFirstComponent() {
     boxShadow: "0px 10px black",
   };
   return (
-    <div>
+    <div className={"redbg"}>
       <h1
         style={{
           backgroundColor: "blue",
