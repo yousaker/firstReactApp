@@ -3,16 +3,30 @@ export default function MyFirstComponent() {
     name: "yarob",
     pernom: "ssa",
   };
+  const stylep = {
+    backgroundColor: "green",
+    fontSize: "20px",
+    boxShadow: "0px 10px black",
+  };
   return (
     <div>
-      <h1>
+      <h1
+        style={{
+          backgroundColor: "blue",
+          fontSize: "20px",
+        }}
+      >
         {SayHello()} hamid {person.name}
       </h1>
-      <p>hhhhhhhhhh</p>
+      <p style={stylep}>hhhhhhhhhh</p>
+      <button onClick={al}>Clique</button>
     </div>
   );
 }
 
 function SayHello() {
   return "hello avec ";
+}
+function al() {
+  alert("hello");
 }
