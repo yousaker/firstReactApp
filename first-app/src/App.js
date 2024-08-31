@@ -1,7 +1,6 @@
 import "./App.css";
+import Article from "./Article";
 import logo from "./logo.svg";
-import MyFirstComponent from "./MyFirstComponent";
-
 function App() {
   return (
     <div className="App">
@@ -10,8 +9,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <h1>saker</h1>
-        <MyFirstComponent />
+
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -20,6 +18,9 @@ function App() {
         >
           Learn React
         </a>
+        <Article person="you" email="ssss@kjihu" age="234"></Article>
+        <Article person="khg" email="kjhggy@knghftzertyt" age="87654"></Article>
+        <Article person="kjhgf" email="swxcvsss@poiuytrd" age="23456"></Article>
       </header>
     </div>
   );
